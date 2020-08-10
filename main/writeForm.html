@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<!-- css -->
+<link href="../css/main.css" rel="stylesheet">
+
+<style>
+body {
+	padding-top: 20px;
+	background-color: #1E2832;
+}
+
+.navbar {
+	background-color: #07090c;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus, .nav .about_sign a:hover
+	{
+	background-color: #51BAA4;
+	border-color: #eee;
+}
+
+#carousel-example-generic .carousel-inner  h3 {
+	color: rgba(255, 255, 255, 0.75);
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar" role="navigation">
+		<div class="navbar-header">
+			<button type="button" style = "color:#fff;"class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">WORKOUT</a>
+		</div>
+
+		<div
+			class="collapse navbar-collapse  navbar-right navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active about_sign"><a data-toggle="modal"
+					data-backdrop="static" href="#myModal">Sign In</a></li>
+				<li class="about_sign"><a href="signup.html">Sign UP</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">GX <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="board.html">Cross Fit</a></li>
+						<li><a href="#" onclick="javascript:signupWarning()">Aerial
+								Yoga</a></li>
+						<li><a href="#">Pilates</a></li>
+					</ul></li>
+			</ul>
+	</nav>
+
+
+	<h1 style="padding-top:5dp; text-align: center; font-size : 20dp; color : #fff;">Cross Fit</h1>
+	<section class="row wrapper style2 special">
+		<div class="col-md-1"></div>
+		<form class="col-md-10">
+			<table class="table">
+				<tr>
+					<th>Title</th>
+					<td style="text-align: left;"><input type="text" name="title">
+					</td>
+				</tr>
+				<tr>
+					<th>File</th>
+					<td style="text-align: left;">
+						<button type="button" id="btnAddFile" class="btn small">Add
+							File</button>
+						<div id="fileBox">
+							<div>
+								<input type="file" name="filename">
+							</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">Contents</th>
+					<td style="text-align: left;"><textarea rows="13" cols="40"
+							name="content"></textarea></td>
+				</tr>
+			</table>
+
+			<div style="test-align: right;">
+				<button class="btn alt"
+					style="background-color: #fff; color: #07090c !important;"
+					type="submit">Write</button>
+				<button class="btn alt"
+					style="background-color: #fff; color: #07090c !important;"
+					type="reset">Rewrite</button>
+				<button class="btn alt"
+					style="background-color: #fff; color: #07090c !important;"
+					type="button">Return to Board</button>
+			</div>
+			<div class="col-md-1">
+		</form>
+		</div>
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-facebook"> <span
+						class="label">Facebook</span>
+				</a></li>
+				<li><a href="#" class="icon fa-twitter"> <span
+						class="label">Twitter</span>
+				</a></li>
+				<li><a href="#" class="icon fa-instagram"> <span
+						class="label">Instagram</span>
+				</a></li>
+				<li><a href="#" class="icon fa-linkedin"> <span
+						class="label">LinkedIn</span>
+				</a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled.</li>
+				<li>Images: <a href="http://unsplash.com">Unsplash</a>.
+				</li>
+				<li>Design: <a href="http://templated.co">TEMPLATED</a>.
+				</li>
+			</ul>
+		</div>
+
+
+	</footer>
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+
+	<script>
+		function signupWarning() {
+			alert('Requirement : Sign Up');
+			location.href = "index.html"
+		}
+	</script>
+</body>
+</html>

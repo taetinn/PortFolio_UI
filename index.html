@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-theme.css" rel="stylesheet">
+<link href="css/custom2.css" rel="stylesheet">
+<!-- css -->
+<link href="css/main.css" rel="stylesheet">
+<!-- favicon -->
+<link rel="shortcut icon" href="" type="image/x-icon">
+
+<style>
+body {
+	padding-top: 20px;
+	background-color: #07090c;
+}
+
+.navbar {
+	background-color: #07090c;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus, .nav .about_sign a:hover
+	{
+	background-color: #51BAA4;
+	border-color: #eee;
+}
+
+#carousel-example-generic .carousel-inner  h3 {
+	color: rgba(255, 255, 255, 0.75);
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">WORKOUT</a>
+		</div>
+
+		<div
+			class="collapse navbar-collapse  navbar-right navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active about_sign"><a data-toggle="modal"
+					data-backdrop="static" href="#myModal">Sign In</a></li>
+				<li class="about_sign"><a href="main/signup.html">Sign UP</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">GX <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="main/board.html">Cross Fit</a></li>
+						<li><a href="#" onclick="javascript:signupWarning()">Aerial
+								Yoga</a></li>
+						<li><a href="#">Pilates</a></li>
+					</ul></li>
+			</ul>
+	</nav>
+
+	<div class="container" style="background-color: #07090c;">
+		<div id="carousel-example-generic" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0"
+					class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/banner1.jpg" alt="First slide">
+					<div class="carousel-caption">
+						<h3>More About Aerial Yoga</h3>
+						<p>
+							<button type="button" class="btn special medium"
+								onclick="location.href='board.html'">CLICK</button>
+						</p>
+
+					</div>
+				</div>
+				<div class="item">
+					<img src="images/banner2.jpg" alt="Second slide">
+					<h3>More About Pilates</h3>
+					<p>
+						<button type="button" class="btn special medium"
+							onclick="location.href='board.html'">CLICK</button>
+					</p>
+				</div>
+				<div class="item">
+					<img src="images/banner3.jpg" alt="Third slide">
+					<h3>More About CrossFit</h3>
+					<p>
+						<button type="button" class="btn special medium"
+							onclick="location.href='main/board.html'">CLICK</button>
+					</p>
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic"
+				data-slide="prev"> <span class="icon-prev"></span>
+			</a> <a class="right carousel-control" href="#carousel-example-generic"
+				data-slide="next"> <span class="icon-next"></span>
+			</a>
+		</div>
+	</div>
+
+	<!-- Show middle part -->
+	<section id="one" class="wrapper style1">
+		<div class="inner">
+			<article class="feature left">
+				<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+				<div class="content">
+					<h2>Integer vitae libero acrisus egestas placerat sollicitudin</h2>
+					<p>Sed egestas, ante et vulputate volutpat, eros pede semper
+						est, vitae luctus metus libero eu augue. Morbi purus libero,
+						faucibus adipiscing, commodo quis, gravida id, est.</p>
+					<ul class="actions">
+						<li><a href="#" style="text-decoration:none;" class="btn alt">More</a></li>
+					</ul>
+				</div>
+			</article>
+			<article class="feature right">
+				<span class="image"><img src="images/pic02.jpg" alt="" /></span>
+				<div class="content">
+					<h2>Integer vitae libero acrisus egestas placerat sollicitudin</h2>
+					<p>Sed egestas, ante et vulputate volutpat, eros pede semper
+						est, vitae luctus metus libero eu augue. Morbi purus libero,
+						faucibus adipiscing, commodo quis, gravida id, est.</p>
+					<ul class="actions">
+						<li><a href="#" style="text-decoration:none;"class="btn alt">More</a></li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+
+
+	<section id="" class="wrapper style2 special">
+		<div class="inner">
+			<header class="major narrow">
+				<h2>Get in touch</h2>
+				<p>DO you have any question?</p>
+			</header>
+			<form action="#" method="POST">
+				<div class="container 75%">
+					<div class="row uniform 50%">
+						<div class="6u 12u$(xsmall)">
+							<input name="name" placeholder="Name" type="text" />
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<input name="email" placeholder="Email" type="email" />
+						</div>
+						<div class="12u$">
+							<textarea name="message" placeholder="Message" rows="4"></textarea>
+						</div>
+					</div>
+				</div>
+				<ul class="actions">
+					<li><button type="button" class="btn special big">SUBMIT</button></li>
+					<li><button type="button" class="btn alt big" />RESET</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">WELCOME</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-sm-2 col-lg-2 control-label">ID </label>
+
+							<div class="col-sm-10 col-lg-10">
+								<input type="text" class="form-control" id="inputId"
+									placeholder="ID">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="Password" class="col-sm-2 col-lg-2 control-label">Password</label>
+							<div class="col-sm-10 col-lg-10">
+								<input type="password" class="form-control" id="inputPassword"
+									placeholder="Password">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn special" data-dismiss="modal">닫기</button>
+					<button type="button" class="btn alt">Sign In</button>
+				</div>
+			</div>
+			<!-- 모달 콘텐츠 -->
+		</div>
+		<!-- 모달 다이얼로그 -->
+	</div>
+	<!-- 모달 전체 윈도우 -->
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-facebook"> <span
+						class="label">Facebook</span>
+				</a></li>
+				<li><a href="#" class="icon fa-twitter"> <span
+						class="label">Twitter</span>
+				</a></li>
+				<li><a href="#" class="icon fa-instagram"> <span
+						class="label">Instagram</span>
+				</a></li>
+				<li><a href="#" class="icon fa-linkedin"> <span
+						class="label">LinkedIn</span>
+				</a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled.</li>
+				<li>Images: <a href="http://unsplash.com">Unsplash</a>.
+				</li>
+				<li>Design: <a href="http://templated.co">TEMPLATED</a>.
+				</li>
+			</ul>
+		</div>
+
+	</footer>
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+
+	<script>
+		function signupWarning() {
+			alert('Requirement : Sign IN');
+			location.href = "index.html"
+		}
+	</script>
+</body>
+</html>

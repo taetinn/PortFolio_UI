@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+<meta charset="utf-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 101 Template</title>
+
+
+<!-- Bootstrap -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.css" rel="stylesheet">
+<link href="../css/custom2.css" rel="stylesheet">
+<!-- css -->
+<link href="../css/main.css" rel="stylesheet">
+
+<style>
+body {
+	padding-top: 20px;
+	background-color: #fff;
+}
+
+.navbar {
+	background-color: #07090c;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus, .nav .about_sign a:hover
+	{
+	background-color: #51BAA4;
+	border-color: #eee;
+}
+
+#carousel-example-generic .carousel-inner  h3 {
+	color: rgba(255, 255, 255, 0.75);
+}
+</style>
+
+</head>
+<body>
+	<nav class="navbar" role="navigation">
+		<div class="navbar-header">
+			<button type="button" style="color: #fff;" class="navbar-toggle"
+				data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">WORKOUT</a>
+		</div>
+
+		<div
+			class="collapse navbar-collapse  navbar-right navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active about_sign"><a data-toggle="modal"
+					data-backdrop="static" href="#myModal">Sign In</a></li>
+				<li class="about_sign"><a href="signup.html">Sign UP</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown">GX <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="board.html">Cross Fit</a></li>
+						<li><a href="#" onclick="javascript:signupWarning()">Aerial
+								Yoga</a></li>
+						<li><a href="#">Pilates</a></li>
+					</ul></li>
+			</ul>
+	</nav>
+
+
+	<h1
+		style="padding-top: 5dp; text-align: center; font-size: 20dp; color: #07090c;">CrossFit</h1>
+	<div class="container">
+		<article id="wrapper style2 special" class="row">
+			<div class="col-md-1"></div>
+			<table id="table" class="col-md-10">
+
+				<tr>
+					<th scope="col" width="200">No.</th>
+					<td width="500" style="text-align: left;">10</td>
+				</tr>
+				<tr>
+					<th scope="col">Read</th>
+					<td style="text-align: left;">10</td>
+				</tr>
+				<tr>
+					<th scope="col">Writer</th>
+					<td style="text-align: left;">CrossFitter</td>
+				</tr>
+				<tr>
+					<th scope="col">Date</th>
+					<td style="text-align: left;">2020-07-13</td>
+				</tr>
+				<tr>
+					<th scope="col">Title</th>
+					<td style="text-align: left;">CrossFit Title</td>
+				</tr>
+				<tr>
+					<th scope="col">Files</th>
+					<td style="text-align: left;"><span
+						style="width: 50%; height: 50%;" img="../images/pic01.jpg"></span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="col">글내용</th>
+					<td style="text-align: left;">Lorem ipsum dolor sit amet,
+						consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+						Aenean massa. Cum sociis natoque penatibus et magnis dis
+						parturient montes, nascetur ridiculus mus. Donec quam felis,
+						ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+						massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+						vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+						venenatis vitae, justo. Nullam dictum felis eu pede mollis
+						pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
+						nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+						porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+						ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+						viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+						imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+						ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
+						tellus eget condimentum rhoncus, sem quam semper libero, sit amet
+						adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+						pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+						tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
+						quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+						leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
+						magna. Sed consequat, leo eget bibendum sodales, augue velit
+						cursus nunc,</td>
+				</tr>
+			</table>
+			<div class="col-md-1"></div>
+
+
+			<!-- 댓글 영역 -->
+			<div class=" row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<span class="glyphicon glyphicon-comment"></span> 댓글
+						</div>
+						<div class="panel-body">
+
+							<ul class="media-list">
+								<li class="media"><a class="pull-left" href="#"> <img
+										alt="Generic placeholder image" src="../images/pic.jpg">
+								</a>
+									<div class="media-body">
+										<div class="media-heading">
+											<strong class="text-primary">user01</strong> <small
+												class="pull-right text-muted">2020-07-20 16:20:45</small>
+										</div>
+										<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel
+											metus scelerisque ante sollicitudin commodo. Cras purus odio,
+											vestibulum in vulputate at, tempus viverra turpis.</p>
+									</div></li>
+							</ul>
+						</div>
+						<!-- /.panel-body -->
+						<div class="panel-footer"></div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+
+			</div>
+
+			<div id="table_search" class="pull-right">
+				<button type="button" class="btn speical"
+					style="margin-bottom: 10px;">Reply</button>
+				<button type="button" class="btn special"
+					style="margin-bottom: 10px;" onclick="location.href='board.html'">Return
+					to List</button>
+			</div>
+		</article>
+	</div>
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-facebook"> <span
+						class="label">Facebook</span>
+				</a></li>
+				<li><a href="#" class="icon fa-twitter"> <span
+						class="label">Twitter</span>
+				</a></li>
+				<li><a href="#" class="icon fa-instagram"> <span
+						class="label">Instagram</span>
+				</a></li>
+				<li><a href="#" class="icon fa-linkedin"> <span
+						class="label">LinkedIn</span>
+				</a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled.</li>
+				<li>Images: <a href="http://unsplash.com">Unsplash</a>.
+				</li>
+				<li>Design: <a href="http://templated.co">TEMPLATED</a>.
+				</li>
+			</ul>
+		</div>
+
+
+	</footer>
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/skel.min.js"></script>
+	<script src="../js/util.js"></script>
+
+	<script>
+		function signupWarning() {
+			alert('Requirement : Sign Up');
+			location.href = "index.html"
+		}
+	</script>
+</body>
+</html>
